@@ -1,0 +1,208 @@
+/*
+Aufgabe: (4-1)
+Name: (Alicia Burger)
+Matrikel: (254604)
+Datum: (15.11.2016)
+Hiermit versichere ich, dass ich diesen
+Code selbst geschrieben habe. Er wurde
+nicht kopiert und auch nicht diktiert.
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif; ;
+    font-size: medium ;
+    margin: auto;
+	padding: 2em;
+	
+}
+
+h1 {color:#D2002A ;
+   font-family: 'Handlee', cursive;
+    float: center;
+    margin-bottom:10px;}
+h2 {color:black ;
+   font-family: 'Handlee', cursive;
+    margin-bottom:10px;
+    border-bottom:10px;
+    margin-top:10px;
+    border-top:10px;
+    margin-left:10px;
+    margin-right:1000px;
+    float:center}
+    
+h3 {color:black ;
+	font-size: 16px;	
+	height: 18px;
+	padding:2px;
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+    
+ul {color:black ;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    margin-bottom: 5px;}
+
+
+article{
+	padding-bottom:5px;
+	border-bottom:1px;
+	margin-bottom: 5px;
+	
+}
+    
+
+
+.mittig {text-align: center;
+}
+
+
+.rechts{text-align: right;
+}
+
+
+.links{text-align: left;
+}
+
+
+  	/*Boxen*/
+  	
+.hauptbox {
+    width: 150px;
+    height: 40px;
+    background-color:#CECECE ;
+    color: #000000;
+    border-style: solid;
+    border-color:#8D8C8C;
+    border-width: 1px;
+    padding:5px;
+    padding-left:25px;
+    padding-bottom:20px;
+    float: left;
+    margin-top: 50px;
+    margin-bottom:20px;
+    margin-right: 10px;
+
+}
+
+.loginbox {
+    width: 120px;
+    height: 30px;
+    background-color:#ABABAB ;
+    color: #000000;
+    border-style: solid;
+    border-color:#8D8C8C;
+    border-width: 1px;
+    padding:5px;
+    padding-left:25px;
+    padding-bottom:30px;
+    float: right;
+    margin-top: 50px;
+    margin-bottom:20px;
+    margin-right: 10px;
+    
+}
+
+
+.startbox{
+    width: 1500px;
+    height: 300px;
+    background-color:#F2F2F2 ;
+    color: #000000;
+    border-style: solid;
+    border-color:#ffffff;
+    border-width: 5px;
+    padding:5px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+
+
+    	
+/*link farben*/	
+a:link{color: black;}
+a:visited{color:#D2002A;}
+a{text-decoration: none;}
+
+
+
+footer * {
+	background-color:#EEEEEE;
+}
+
+
+
+main h2 {
+	color:black;
+	background-color:#D2002A;
+	
+	 
+}
+
+main h3 {
+	color:#363636;
+	background-color:#ABABAB;
+	padding:0.1em;
+	
+}
+
+
+
+
+main > p {
+	margin-left:10px;
+}
+
+main > h3{margin-left: 10px;
+}
+
+
+
+h3 ~ p{margin-left:25px;
+}
+
+h2 ~ p{margin-left:25px;
+}
+	
+
+
+footer section nav li:nth-child(1n) {
+	margin-left:40px;
+}
+nav+p {
+	margin-left: 40px;
+	margin-top:50px;
+	font-size:small;
+		
+}
+
+section+p {
+	margin-left:25px;
+		
+}
+
+aside li:hover{font-size:large;
+	
+}
+
+main p:last-child {border-bottom: solid 2px #656565;
+				
+}
+
+
+
+aside p::first-line {font-weight: bold;}
+main+section+p::first-line {
+		margin-left:25px;
+	float: left;
+}
+
+	
+p a[href^=http]::before {content:">";}
+p a[href^=http]::after {content:"<";}

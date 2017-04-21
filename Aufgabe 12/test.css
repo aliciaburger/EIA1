@@ -1,0 +1,36 @@
+*{
+	padding:0;
+	margin:0;
+}
+body {
+	background-color: #fdfdfd;
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	font-size: 90%;
+	color: #000000;
+}
+
+div#container {
+	width: 1000px;
+	background-color: #400040;
+	margin: 25px auto 25px auto;
+}
+
+div#headerHintergrund {
+	margin: 25px 10px 10px 25px;
+	position: relative;
+	background-image: url(Hintergrund_Home.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#homeHintergrund{width:100%;
+				 position: relative;			 
+}
+#aliciaburger{
+	width:49%;
+	margin-left: 25%;
+	margin-top: 10%;
+	margin-bottom:20%;
+	position: relative;
+}
+
+

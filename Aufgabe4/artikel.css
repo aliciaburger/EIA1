@@ -1,0 +1,69 @@
+/*
+Aufgabe: (4-2)
+Name: (Alicia Burger)
+Matrikel: (254604)
+Datum: (13.11.2016)
+Hiermit versichere ich, dass ich diesen
+Code selbst geschrieben habe. Er wurde
+nicht kopiert und auch nicht diktiert.
+*/
+
+
+/*1*/
+body {
+    background-color: white;
+    font-family: sans-serif ;
+    font-size: medium ;
+}
+
+
+
+/*10*/
+.mittig {text-align: center;
+}
+
+/*10*/
+.rechts{text-align: right;
+}
+
+/*10*/
+.links{text-align: left;
+}
+/*100*/
+#fussbereich {background-color: #D6D6D6;
+			  }
+/*100*/
+#fussnav {background-color: #EEEEEE; 
+		   }	
+/*100*/		   	
+#hauptnav {background-color: #EEEEEE; 
+		   	}
+/*10*/		   		
+.kontakt {background-color: #656565; 
+		   }	
+
+/*1*/
+h1 {color:blue ;
+    font-family: center}
+ /*1*/   
+h3 {color:black ;
+    font-family: center}	
+/*10*/	
+a:link{color: #ABABAB;}
+/*10*/
+a:visited{color:blue;}
+
+/*1*/
+ul {color:black ;
+    font-family: sans-serif;
+    font-size: medium;
+   }
+/*1*/
+p {color:black ;
+    font-family: sans-serif;
+    font-size: medium;
+   }
+
+
+
+/*Gesammt: 1+10+10+10+100+100+100+10+1+1+10+10+1+1 = 347*/

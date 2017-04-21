@@ -1,0 +1,296 @@
+/*
+ Aufgabe: (11)
+Name: (Alicia Burger)
+Matrikel: (254604)
+Datum: (14.01.2017)
+Hiermit versichere ich, dass ich diesen
+Code selbst geschrieben habe. Er wurde
+nicht kopiert und auch nicht diktiert
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+
+body {
+    background-color: white;	
+    font-size: 1em;
+}
+
+
+h2 {color:black ;
+   font-family: 'Handlee', cursive;
+    margin-bottom:10px;
+    border-bottom:10px;
+    margin-top:10px;
+    border-top:10px;
+    margin-left:10px;
+    margin-right:1000px;
+    float:center}
+    
+h3 {color:black ;
+	font-size: 14px;	
+	height: 18px;
+	padding:2px;
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+    
+ul {color:black ;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    margin-bottom: 5px;}
+    
+
+
+.mittig {text-align: center;
+}
+
+
+.rechts{text-align: right;
+}
+
+
+.links{text-align: left;
+}
+/*link farben*/	
+a:link{color: #000091;}
+a:visited{color:#841FFF;}
+a{text-decoration: none;}
+aside{
+	color: #black;
+	width: 100%;
+	font-family:'Poppins', serif;
+	margin-bottom:10px;
+	text-align: left;
+	background-color: #DCD1FF;
+	position: relative;
+	padding-left:20px;
+	line-height: 30px;
+}
+aside>div{
+	padding-top: 5px;
+}
+header {
+	color: #black;
+	width: 100%;
+	font-family:'Poppins', serif;
+	font-size: 25px;
+	line-height: 30px;
+	text-align: left;
+	background-color: #DCD1FF;
+	padding-top:0%;
+	padding-left:0%;
+	margin-bottom:10px;
+	
+	position: relative;
+	
+}
+/*header*/
+header div{
+	background-color: #DCD1FF;
+}
+header>div>div>div {
+	
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px;
+    margin-left: 20%;
+	margin-bottom:10px;
+}
+#menueGr{
+	display:none;
+}
+
+/* header navigation horizontal anordnen */
+	header li {
+		list-style-type: none;
+	}
+
+header form{
+	display: none;
+}
+
+  h1 {color:#3F99FF ;
+	font-size:larger;
+   font-family: 'Handlee', cursive;
+    float: center;
+    margin-left:35px;
+    margin-top:0px;
+    margin-bottom:10px;
+    padding-top:20px;}
+
+header li :hover{
+		color:#EC0066;
+		font-size: 40px;
+}
+header li input :hover{
+		color:#EC0066;
+		font-size: 20px;
+}
+     
+/*Main*/
+main {
+	margin-top:10px;
+	padding: 1% width : 98%;
+	float: left;
+}
+
+/*Box*/
+main > div {
+    width: 96%;
+    height: 18em;
+    background-color: #F2F2F2;
+	margin: 5px;
+    padding:5px;
+    float: left;
+   	overflow:hidden;
+    position:relative;
+}
+main > div :hover{
+    background-color:#ABABAB;
+}
+/*Button*/
+#anmeldenklein{
+	
+}
+.bestellbutton {
+	font-size:12px
+	color:black;
+	background-color:FF384F;
+	width:100px;
+}
+
+.anmeldebutton {
+	font-size:12px
+	color:black;
+	background-color:FF384F;
+	width:100px;
+}
+/*Footer*/
+footer{
+	font-family: 'Poppins', serif;	
+	clear:left;
+	background-color:#CECECE;
+	padding: 1%;
+	
+}
+
+footer li {
+	list-style-type: none;
+	font-size: 12px;
+}
+
+
+
+/*Störer*/
+.stoerer {
+	background-color:#EC0066;
+	color: white;
+	width: 5.5em;
+	height: 5.5em;
+	top: 10px;
+	right: 10px;
+	font-weight: 600;
+	z-index: 150;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+}
+.stoerer.eins{
+	line-height: 5.5em;
+}
+.stoerer.zwei{
+	height: 4em;
+	padding-top: 1.5em;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:  570px){
+
+ 
+ /*ab  570 px */
+ 
+main > div {
+		width: 45%;	
+	}	
+
+}
+
+@media screen and (min-width:  768px){
+
+ 
+ /*ab  768 px */
+ /*Header*/
+h1{
+	font-size:50px;
+}
+header>div>div{
+	display:none;
+}
+
+
+#menueGr{
+	display:inline;
+	
+}
+header div nav{
+	display:none;
+}
+header li {
+		
+		float:left;
+		margin-top:20px;
+		margin-bottom:20px;
+		margin-right:20px;
+		font-size:25px;
+}
+
+header{
+	overflow: hidden;
+}
+.anmeldebutton{
+	display:none;
+}
+header form{
+	float:right;
+	clear:right;
+	font-size:15px;
+	display:inline;
+}
+ /*Main*/
+main > div {
+		width: 30%;	
+	}	
+
+
+
+/*Footer*/
+footer div {
+		width: 32%;
+		float:left;
+		background-color:#CECECE; 
+	}
+footer {
+		overflow: hidden;
+	}
+}
+@media screen and (min-width:  1024px){
+
+ 
+ /*ab  1024 px */
+ 
+main > div {
+		width: 22%;	
+	}	
+/*header>div>div{
+	display:none;
+}*/
+}
+
+

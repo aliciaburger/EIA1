@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Positionierung</title>
+        <link rel="stylesheet" type="text/css" href="website1.css">
+      <script src="website.js"></script>
+    </head>
+    <body>
+    	<!--  Aufgabe: (12)
+Name: (Alicia Burger)
+Matrikel: (254604)
+Datum: (14.02.2017)
+Hiermit versichere ich, dass ich diesen
+Code selbst geschrieben habe. Er wurde
+nicht kopiert und auch nicht diktiert -->
+
+        <!--HEADER-->
+        <header>
+        	
+	        	<div id="navfeld">
+	        		<a href="#navfeld">
+			        	<div id="burger">
+			        		
+							<div class="burgerIcon"></div>
+							<div class="burgerIcon"></div>
+							<div class="burgerIcon"></div>
+							
+						</div>
+						</a>
+						<div>
+							<nav id="klappmenue">
+				               	 <ul>
+				                    <li>
+				                       <a id="home" href="#bildHintergrund">HOME</a> 
+				                    </li>
+				                      <li>
+				                        <a id="aboutkl" href="#ankerAbout">ABOUT</a>
+				                    </li>
+				                    <li>
+				                        <a id="portfoliokl"  href="#ankerPortfolio">PORTFOLIO</a>
+				                    </li>
+				                  
+				                     <li>
+				                       <a id="contactkl" href="#footerbox">CONTACT</a>
+				                    </li>
+				                    <li>				                    	
+					                   <a id="abkuerzelHome" href="#bildHintergrund">
+					                        <img id="abkuerzelKl" src="Bilder/Abkuerzel.png" onmouseover="mouseover" />
+					                        <img id="abkuerzelKlB" src="Bilder/AbkuerzelB.png" onmouseout="mouseout"/>
+					                   </a>
+				                       
+				                    </li>
+				                </ul>
+				                
+				               
+							</nav>
+							
+						<div id="boxMenueGr">	
+							
+							<nav id="menueGr">
+				                <ul>
+				                    <li>
+				                       <a id="homeGr" href="#bildHintergrund">HOME</a> 
+				                    </li>
+				                    <li>
+				                        <a id="aboutGr" href="#ankerAbout">ABOUT</a>
+				                    </li>
+				                    <li id="abkMargTop">	
+				                    	<a href="#bildHintergrund">			                    	
+					                   		<img id="abkuerzelGrB" src="Bilder/AbkuerzelB.png" />
+					                    	<img id="abkuerzelGr" src="Bilder/Abkuerzel.png" />
+					                   	</a>
+				                    </li>	 				                   	                  
+				                    <li>
+				                        <a id="portfolioklGr"  href="#ankerPortfolio">PORTFOLIO</a>
+				                    </li>
+				                     <li>
+				                       <a id="contactGr" href="#footerbox">CONTACT</a>
+				                    </li>  
+				                </ul>
+							</nav>
+						
+						</div> 
+						
+					</div>
+	        	</div>
+        	
+        	
+			
+		</header>
+<!-- Header -->		
+		<main>
+			
+				<div id="bildHintergrund">
+					<!--Schriftzug als Bild, da Font weder in CSS ,noch ähnliche bie Google Fonts online vorhanden ist.-->
+						<img src="Bilder/AliciaBurger.png" alt="Alicia Burger" id="aliciaburger" /> 	
+						<div id="ankerPortfolio" class="anker"> </div>										
+				</div>	
+				
+				
+				<section id="uebersSect">						
+						<div id="ueberBox">
+								<p class="ueberschriftGr" id="uebersPortf">PORTFOLIO</p>
+								<p class="ueberschriftKl"> 							
+								<a href="#ankerProjects">PROJECTS  </a>|
+								<a href="#ankerPhotos">  PHOTOGRAPHY</a>														 
+								</p>
+						</div>
+					<div id="ankerProjects" class="anker"> </div>
+				</section>	
+				
+<!-- Projekte -->				
+				<section id="projSect">
+					<div class="shadow">
+						<p class="ueberschriftGr" id="projects">PROJECTS</p>
+						<div id="fuerstbox">
+								<div>
+										<a href="#fuerstenb"><img src="Bilder/dose.png" class="boxHoch" id="fuerstenb" /></a>
+								</div>	 
+								
+								<div id="popUpFuerst" class="popUp">
+									
+										<div class="spalte1v3">									
+												<img src="Bilder/fuerst1.png" class="boxHoch" />									
+										</div>
+										<div class="spalte2v3">
+												<img src="Bilder/fuerst2.png" class="boxHoch" />									
+										</div>
+										<div class="spalte3v3">	
+																				
+											<p> Conception of a new "Fürstenberg" campaign, for a new target group.
+												Designed with Photoshop, film and storyboard in teamwork.
+											</p>
+										</div>
+										
+								</div>														
+						</div>
+						
+						<div id="ballbox">
+								<div>
+										<a href="#hochschBall"><img src="Bilder/Hochschulball plakat 1.jpg" class="boxHoch" id="hochschBall" /></a>
+								</div>	 
+								
+								<div id="popUpBall" class="popUp">
+									
+										<div class="spalte1v3">									
+												<img src="Bilder/Hochschulball-plakat-2.png" class="boxHoch" />									
+										</div>
+										
+										<div class="spalte3v3">	
+																				
+											<p> Poster design for the university ball (teamwork)
+											</p>
+										</div>
+										
+								</div>														
+							</div>	
+								
+							<div id="awarebox">
+								<div>
+										<a href="#awarenesCam"><img src="Bilder/awarenes2.png" class="boxHoch" id="awarenesCam" /></a>
+								</div>	 
+								
+								<div id="popUpAware" class="popUp">
+									
+										<div class="spalte1v3">									
+												<img src="Bilder/awarenes.png" class="boxHoch" />									
+										</div>
+										<div class="spalte2v3">
+												<img src="Bilder/awarenes1.png" class="boxHoch" />									
+										</div>									
+										<div class="spalte3v3">	
+																				
+											<p> Concept for an awareness-campaign: Crash because of smartphone (teamwork)
+											</p>
+										</div>
+										
+								</div>														
+							</div>
+							
+							<div id="typoBox">
+								<div>
+										<a href="#typogr"><img src="Bilder/typografie.png" class="boxQuer" id="typogr" /></a>
+								</div>	 
+								
+								<div id="popUpTypo" class="popUp">									
+											<div class="spalte3v3">																		
+											<p> Concept typography
+											</p>
+										</div>
+										
+								</div>														
+							</div>
+
+					</div>
+					
+				</section>
+				
+				
+				<section id="photoSect">
+					<div id="ankerPhotos" class="anker"> </div>
+					<p class="ueberschriftGr" id="photos">PHOTOGRAPHY</p>
+					
+					
+								<div>
+										
+											<img src="Bilder/cori1.png" class="boxQuer" />
+											
+								</div>	 									
+								<div>
+										
+											<img src="Bilder/cori3.png" class="boxQuer" />
+											
+								</div>	
+								<div>
+										
+											<img src="Bilder/lara2.png"class="boxQuer"  />
+											
+								</div>	
+								<div>
+										
+											<img src="Bilder/pferdeauge_jerry.jpg" class="boxQuer" />
+											
+								</div>													
+							<div>
+										
+											<img src="Bilder/Abendrot.jpg" class="boxQuer" />
+											
+								</div>	
+								<div>
+										
+											<img src="Bilder/Kornfeld_1.jpg" class="boxQuer" />
+											
+								</div>	
+								<div>
+										
+											<img src="Bilder/Kirschblüten.png" class="boxQuer" />
+											
+								</div>	
+								<div>
+										
+											<img src="Bilder/strand-garmisch.png" class="boxQuer" />
+											
+								</div>															
+								<div>
+										
+											<img src="Bilder/Ente1.png" class="boxQuer" />
+											
+								</div>	
+								<div>
+										
+											<img src="Bilder/winter_sun.png" class="boxHoch" />
+											
+								</div>	
+					
+					
+					
+					
+					
+						
+				</section>
+				
+				<section id="aboutSect">
+					<div id="ankerAbout" class="anker"> </div>
+					<p class="ueberschriftGr" id="about">ABOUT</p>
+					<br />
+					<div>
+						<img src="Bilder/ich.jpeg" id="ich"/>
+						<div id="aboutDiv">
+							Hi, I‘m Alicia Burger, a media-conception Student based in the Black Forest, in Germany.
+							Feel free to contact me.
+						</div>
+						<p id="skills">SKILLS</p>
+					<div id="listenDiv">
+						
+						<div class="listbox">
+							
+							<ul class="liste">								
+								 <li>
+								 	HTML
+								 </li>
+								 <li>
+								 	CSS
+								 </li>
+								 <li>
+								 	PHP
+								 </li>
+								 <li>
+								 	java
+								 </li>
+								 <li>
+								 	javascript						 	
+								 </li>
+								 <li>
+								 	SQL
+								 </li>
+							</ul>
+						</div>
+						<div class="listbox">
+							<ul class="liste">
+								 <li>
+								 	Photoshop
+								 </li>
+								 <li>
+								 	Lightroom
+								 </li>
+								 <li>
+								 	Bridge
+								 </li>
+								 <li>
+								 	InDesign
+								 </li>
+								 <li>
+								 	Dreamwaver					 	
+								 </li>
+								 <li>
+								 	Gimp
+								 </li>
+							</ul>
+						</div>					
+
+						<div class="listbox">
+							<ul class="liste">
+								 <li>
+								 	MS-Word
+								 </li>
+								 <li>
+								 	MS-Powerpoint
+								 </li>
+								 <li>
+								 	MS-Excel
+								 </li>
+								 <li>
+								 	MS-Navision
+								 </li>								 
+							</ul>
+						</div>
+						
+					</div>
+					
+					
+				</div>	
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		</main>	
+		
+<!--FOOTER-->
+
+		<footer >
+			
+			<div id="footerbox">
+
+
+
+			<div id="eMail" class="footerText"><a href="https://www.instagram.com/alicia.burger_/">
+					<img src="Bilder/instaIcon.png" id="istaIcon" />
+					: alicia.burger_     </a
+				
+			
+				
+				<div id="insta" class="footerText"><img src="Bilder/mail.png" id="mailIcon" />: aliciaburger@t-online.de</div>
+						<img src="Bilder/hfu.png" id="hfu"/>
+
+			</div>
+			</div>
+		</footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+

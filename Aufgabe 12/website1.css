@@ -1,0 +1,555 @@
+/*
+ Aufgabe: (11)
+Name: (Alicia Burger)
+Matrikel: (254604)
+Datum: (14.01.2017)
+Hiermit versichere ich, dass ich diesen
+Code selbst geschrieben habe. Er wurde
+nicht kopiert und auch nicht diktiert
+*/
+
+/*Layout*/
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+*{
+	padding:0;
+	margin:0;
+}
+
+body {
+    background-color: #363636;	
+}
+
+/*link farben*/	
+a:link {color: #a3a3a3;}
+a:visited {color: #a3a3a3;}
+a:hover {color: #01c6ff;}
+a:active {color: #01c6ff;}
+a{text-decoration: none;}
+/*---------------------------------------------------------------------------------------------------*/
+	/*HEADER*/
+	
+header {
+	width: 100%;		
+}
+#navfeld{
+	position:fixed;
+	background-color: rgba(0, 0, 0, 0.25);
+	width:100%;
+	z-index:200 ;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+/*---------------------------------------*/
+	/*Menü */
+	
+.burgerIcon {	
+    width: 35px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 6px;
+    margin-left: 25px%;
+	margin-bottom:10px;
+}
+#menueGr{
+	display:none;
+}	
+#klappmenue li {
+	text-align:center;
+	margin-left:1%;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	color: #a3a3a3;
+	font-size:200%;
+	list-style-type: none;
+	}
+li a img{
+		height: 1.5em;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+	}
+#abkuerzelKlB{
+	height: 1.5em;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 10px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*MAIN*/
+
+	/*Hintergrundbild+Text*/
+		
+#bildHintergrund{    
+	background-image: url(Bilder/Hintergrund_Home.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	
+}		 
+#aliciaburger{
+	width:49%;
+	margin-left: 26%;
+	margin-top: 17%;
+}
+.anker{
+	height:51px;
+
+}
+#ankerPortfolio{position: relative;
+}
+
+/*---------------------------------------*/
+	/*Überschriften*/
+	
+#uebersSect{
+	width: 100%;
+	background-color: #282828;
+	padding-top: 0px;
+	box-shadow: 0px 1px 5px black;
+	
+}
+.ueberschriftGr{
+	font-family: Century Gothic,'Questrial', sans-serif;
+	font-size:1.75em;
+	padding-top:50px;
+	width:100%;
+	color:#e4e4e4;
+	text-align: center;
+}
+
+.ueberschriftKl{
+	font-family: Century Gothic,'Questrial', sans-serif;
+	font-size:0.75em;
+	margin-top:5px; 
+	color:#e4e4e4;
+	text-align: center;
+}
+#ueberBox{
+	position: relative;
+	z-index: 110;
+}
+#ankerProjects{
+	position: relative;
+	z-index: 100;
+}
+
+/*---------------------------------------*/
+	/*photography + projects + about*/
+
+	
+
+	
+#projSect{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+#projects{
+	margin-bottom:10px;;
+}
+.boxHoch{
+	width: 65%;
+	
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.boxQuer{
+	width: 90%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.BoxQuadrat{
+	width: 75%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+
+#fuerstbox{
+	margin-top:5px;
+}
+#ballbox{
+	margin-top:5px;
+}
+#awarebox{
+	margin-top:5px;
+}
+.popUp{
+	width: 100%;
+	background-color: #282828;
+	box-shadow: 2px 2px 5px black;
+	display: none;
+}
+.spalte1v3{
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #282828;
+	width:80%;
+}
+.spalte2v3{
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #282828;
+	width:80%;
+}
+.spalte3v3{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-bottom:15px;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:120%;
+	text-align:center;
+	background-color: #282828;
+	color: #a3a3a3;
+	width:80%;
+}
+
+#ankerPhotos{
+	position: relative;
+	z-index: 100;
+}
+
+
+
+#photoSect{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#photos{
+	display:box;
+	float:right;
+	margin-bottom:10px;
+	width:100%;
+	position: relative;
+	z-index: 110;
+}
+
+
+
+#aboutSect{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#about{
+	display:box;
+	float:right;
+	margin-bottom:10px;
+	width:100%;
+	position: relative;
+	z-index: 110;
+}
+#ich{margin-left:2.5%;
+margin-right:2.5%;
+	width: 100%;
+	float:left;
+	
+}
+#aboutDiv{
+	width: 100%;
+	margin:2.5%;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:150%;
+	text-align:center;
+	color: #a3a3a3;
+	float:left;
+}
+
+#listenDiv{
+	float: left;
+	 margin-left: auto;
+    margin-right: auto;
+  
+
+}
+.liste{
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:120%;	
+	color: #a3a3a3;	
+	margin-top:20px;
+}
+.listbox{
+	float:left;
+	width:100%;
+	margin-bottom:30px;
+	margin-left: 30px;
+}
+#skills{
+	width: 100%;
+	float:left;	
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:150%;
+	text-align:center;
+	color:#e4e4e4;
+	margin-top:50px;
+	margin-bottom: 35px;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+
+footer{
+	margin-top:10px;
+	background-color: #282828;
+width:100%;}
+
+.footerText{
+	width: 100%;
+	margin-top:2.5%;
+	padding-left:10%;
+	text-align: left;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:150%;
+	text-align:left;
+	color: #a3a3a3;
+	float: left;
+}
+
+#hfu{
+	width:50%;
+	float:right;
+	margin-top: 50px;	
+	
+}
+#eMail{
+	width:100%;
+	float: left;
+	margin-right: 20%;
+}
+#insta{
+	width:100%;
+	float: left;
+	
+}
+#footerbox{margin-left:0;
+margin-bottom:0;
+	float: left;
+	width: 100%;
+	background-color: #282828;
+}
+
+#mailIcon{
+background-color: #282828;
+	padding-right:20px;
+	width:20%;
+}
+#istaIcon{
+	margin-right:10px;
+	width:13% ;
+	
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*Breakpoints*/
+@media screen and (min-width:  350px){
+	/*MAIN*/
+.ueberschriftGr{	
+		font-size:2.4em;
+	}
+.ueberschriftKl{	
+		font-size:1em;
+	}	
+}
+/*---------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:  570px){
+	
+	 
+ /*ab  570 px */
+	 
+	/*header*/
+	.burgerIcon {	
+	    width: 35px;
+	    height: 5px;
+	    background-color: rgba(255, 255, 255, 0.9);
+	    margin: 6px;
+	    margin-left: 25px%;
+		margin-bottom:10px;
+	}
+	/*---------------------------------------*/
+	/*main*/
+	.ueberschriftGr{	
+		font-size:4em;
+	}
+
+.boxHoch{
+	width: 30%;
+	margin:2.5%;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+
+
+}
+.boxQuer{
+	width: 55%;
+	margin:2.5%;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+}
+.BoxQuadrat{
+	width: 35%;
+	margin:2.5%;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+}
+
+
+.popUp{float: left;
+	width: 100%;
+	background-color: #282828;
+	box-shadow: 2px 2px 5px black;
+	display: none;
+}
+
+
+#listenDiv{
+	float: left;
+	width: 100%;
+}
+.liste{
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:150%;	
+	color: #a3a3a3;	
+}
+.listbox{
+	float:left;
+	width:25%;
+	margin-left: 4%;
+}
+
+}
+/*---------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:  768px){
+
+ 
+ /*ab  768 px */
+	 /*Header*/
+	
+	#burger{
+		display:none;
+	}
+	
+	#klappmenue{
+		display:none !important;
+	}
+	#menueGr{
+		display: inline;	
+	}
+	#boxMenueGr{
+		display: block;	
+		margin-left:15%;
+		margin-top:15px;
+		margin-bottom:15px;
+	}
+
+	#menueGr li {
+		float:left;
+		margin-left:2%;
+		font-family: Candara, 'Hind Siliguri', sans-serif;
+		color: #a3a3a3;
+		font-size:180%;
+		list-style-type: none;
+		}
+	#abkMargTop{
+		margin-top:5px;
+	}
+	#abkuerzelGr{
+		margin-left: 0px;
+		height:2em;
+		
+	}
+	#abkuerzelGrB:hover {
+			opacity: 1;
+			
+	}
+	#abkuerzelGrB{
+		height:2em;
+		margin-left: 0px;
+		opacity: 0;
+		position: absolute;
+	}
+/*---------------------------------------*/
+/*Main*/
+.boxHoch{
+	width: 20.5%;
+}
+.boxQuer{
+	width: 42%;
+}
+.BoxQuadrat{
+	width: 28%;
+}
+.anker{
+	height:96px;
+}
+#skills{
+	font-size: 2em;
+}
+#ich{
+	width: 25%;
+}
+#aboutDiv{
+	width: 65%;
+	margin:2.5%;
+	font-size:150%;
+	text-align:center;
+
+}
+
+/*footer*/
+#hfu{
+	width:20%;
+}
+	}
+
+/*---------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:  1024px){
+
+/*Header*/
+#boxMenueGr{
+		margin-left:20%;
+	}
+
+	#menueGr li {
+		margin-left:1%;
+		font-size:300%;
+		}
+		
+.anker{
+	height:128px;
+}		
+
+/*Main*/
+.boxHoch{
+	width: 14.5%;
+}
+.boxQuer{
+	width: 28%;
+}
+.BoxQuadrat{
+	width: 19%;
+}
+}
+
+
+
+

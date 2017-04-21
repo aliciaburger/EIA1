@@ -1,0 +1,73 @@
+/*
+ Aufgabe: (11)
+Name: (Alicia Burger)
+Matrikel: (254604)
+Datum: (14.01.2017)
+Hiermit versichere ich, dass ich diesen
+Code selbst geschrieben habe. Er wurde
+nicht kopiert und auch nicht diktiert
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+
+body {
+    background-color: #363636;	
+}
+
+
+header {
+	color: #black;
+	width: 100%;
+	font-family:'Poppins', serif;
+	text-align: left;
+	background-color: #DCD1FF;
+	
+	
+}
+/*header*/
+#headerHintergrund{
+
+}
+#homeHintergrund{width:100%;
+				 margin-left:0px;
+				 margin-top:0px;
+				 position: absolute;
+				 z-index: 1;
+				 
+}
+#aliciaburger{
+	width:49%;
+	margin-left: 25%;
+	margin-top: 10%;
+	margin-bottom:20%;
+	position: absolute;
+	z-index: 2;
+	
+}
+
+#menueGr{
+	display:none;
+}
+#abkuerzel{
+	display: none;	
+}
+
+/* header navigation horizontal anordnen */
+
+     
+
+/*Footer*/
+footer{
+	font-family: 'Poppins', serif;	
+	clear:left;
+	background-color:#CECECE;
+	padding: 1%;
+	
+}
+
+footer li {
+	list-style-type: none;
+	font-size: 12px;
+}
+
