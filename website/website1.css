@@ -122,10 +122,22 @@ li a img{
 
 .ueberschriftKl{
 	font-family: Century Gothic,'Questrial', sans-serif;
-	font-size:0.75em;
+	font-size:1em;
 	margin-top:5px; 
 	color:#e4e4e4;
 	text-align: center;
+}
+.semesterZahl{
+	font-family: Century Gothic,'Questrial', sans-serif;
+	font-size:1em; 
+	color:#a3a3a3;
+	float:left;
+	text-align: center;
+	margin-top:70px;
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+	width:95%;
 }
 #ueberBox{
 	position: relative;
@@ -149,11 +161,11 @@ li a img{
 
 }
 #projects{
-	margin-bottom:10px;;
+	margin-bottom:10px;
 }
+
 .boxHoch{
 	width: 65%;
-	
 	margin-top:40px;
 	display: block;
     margin-left: auto;
@@ -189,13 +201,13 @@ li a img{
 .popUp{
 	width: 100%;
 	height:100%;
-	background-color: #282828;
+	background-color: #282828 !important;
 	box-shadow: 2px 2px 5px black;
 	display: none;	
 
   	position: fixed;
  	 z-index: 250;
- 	 padding-top: 100px;
+ 	 padding-top: 50px;
  	 left: 0;
   	 top: 0;
  	 overflow: auto;
@@ -207,7 +219,7 @@ li a img{
 
 /*position: relative;*/
 }
-.mySlides {
+.anzahl {
     display: none;
 }
 
@@ -244,7 +256,7 @@ li a img{
 	text-align:center;
 	color: #d7d7d7;
 	margin-left:20%;
-	margin-top:30px;
+	margin-top:15px;
   position: absolute;
   top: 0;
 }
@@ -262,8 +274,9 @@ li a img{
   transition: background-color 0.6s ease;
 }
 
-#punkt{
+.punkt{
 	text-align: center;
+	margin-bottom:50px;
 }
 .active, .dot:hover {
   background-color: #01c6ff;
@@ -290,9 +303,9 @@ li a img{
 .close {
   color: #d7d7d7;
   position: absolute;
-  margin-top: 20px;
+
   margin-right:20%;
-  top: 10px;
+  top:8px;
   right: 25px;
   font-size: 35px;
   font-weight: bold;
@@ -306,24 +319,95 @@ li a img{
 }
 
 
-.boxGr{
+.boxQGr{
 	margin-left:20%;
 	margin-right:20%;
 	margin-bottom:10px;
 	width:60%;
 }
-.boxText{
-	margin-left:19%;
-	margin-right:19%;
-	width:60%;
+.boxHGr{
+	margin-left:30%;
+	margin-right:30%;
+	margin-bottom:10px;
+	width:40%;
 
-	margin-bottom:250px;
+}
+.boxTextZusatz{
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+
+	margin-bottom:10px;
 	font-family: Candara, 'Hind Siliguri', sans-serif;
-	font-size:120%;
+	font-size:75%;
+	text-align:center;
+	color: #a3a3a3;
+}
+.boxText{
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+
+	margin-bottom:10px;
+	font-family: Candara, 'Hind Siliguri', sans-serif;
+	font-size:75%;
 	text-align:center;
 	color: #a3a3a3;
 }
 
+.einzelBildP{
+	
+}
+.boxHoch{
+	width: 65%;
+	
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.boxQuer{
+	width: 90%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.BoxQuadrat{
+	width: 75%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.boxHochPh{
+	width: 65%;
+	
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.boxQuerPh{
+	width: 90%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
+.BoxQuadratPh{
+	width: 75%;
+	margin-top:40px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+}
 
 /*.spalte1v3{
 	margin-left: auto;
@@ -372,7 +456,7 @@ li a img{
 	display:box;
 	float:right;
 	margin-top:20px;
-	margin-bottom:10px;
+	margin-bottom:40px;
 	width:100%;
 	position: relative;
 	z-index: 110;
@@ -497,13 +581,14 @@ width:100%;}
 }
 #insta{
 	width:100%;
-	float: left;
+	float: left;5px;
 	padding-top: 10px;	
 }
 #facebook{
 	width:100%;
 	float: left;
 	padding-top: 10px;	
+
 	margin-top:2.5%;
 }
 #footerbox{margin-left:0;
@@ -550,7 +635,16 @@ background-color: #282828;
 .ueberschriftKl{	
 		font-size:1em;
 	}	
+.boxText{
+	font-size:90%;
 }
+.boxTextZusatz{
+	font-size:90%;
+}
+
+
+}
+
 /*---------------------------------------------------------------------------------------------------*/
 @media screen and (min-width:  570px){
 	
@@ -571,10 +665,20 @@ background-color: #282828;
 	.ueberschriftGr{	
 		font-size:4em;
 	}
+	.boxHOut{
+	height:230px;
+float:left;
+	width: 20%;
+}
+.boxQOut{
+	height:230px;
+float:left;
+	width: 40%;
+}
 
 .boxHoch{
-	width: 30%;
-	margin:2.5%;
+	width: 90%;
+	margin:15px;
 	margin-top:40px;
 	float: left;
 	position: relative;
@@ -583,14 +687,55 @@ background-color: #282828;
 
 }
 .boxQuer{
-	width: 55%;
-	margin:2.5%;
+	width: 95%;
+	margin:15px;
 	margin-top:40px;
 	float: left;
 	position: relative;
 	z-index:100;
 }
 .BoxQuadrat{
+	width: 90%;
+	margin:2.5%;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+}
+
+/* .boxHochPh{ */
+/* 	width: 65%; */
+	
+/* 	margin-top:40px; */
+/* 	display: block; */
+/*     margin-left: auto; */
+/*     margin-right: auto; */
+/*     box-shadow: 2px 2px 5px black; */
+/* } */
+
+.boxHochPh{
+	width:30%;
+	margin:2.5%;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+
+
+}
+.boxQuerPh{
+	width: 45%;
+	margin:2.5%;
+	margin-top:40px;
+	float: left;
+	position: relative;
+	z-index:100;
+}
+
+#links{
+	clear:left;
+}
+.BoxQuadratPh{
 	width: 35%;
 	margin:2.5%;
 	margin-top:40px;
@@ -599,14 +744,20 @@ background-color: #282828;
 	z-index:100;
 }
 
-
 .popUp{float: left;
 	width: 100%;
 	background-color: #282828;
 	box-shadow: 2px 2px 5px black;
 	display: none;
 }
-
+.boxText{
+	font-size:100%;
+	width:80%;
+}
+.boxTextZusatz{
+	font-size:100%;
+	width:80%;
+}
 
 #listenDiv{
 	float: left;
@@ -688,15 +839,54 @@ background-color: #282828;
 	
 /*---------------------------------------*/
 /*Main*/
+
+.boxText{
+
+	width:90%;
+}
+.boxTextZusatz{
+	
+	width:90%;
+}
+
+.boxHGr{
+	margin-left:35%;
+	margin-right:auto;
+	width:300px;
+}
+.boxHOut{
+	height:300px;
+
+}
+.boxQOut{
+	height:300px;
+
+}
+
 .boxHoch{
-	width: 20.5%;
+	width: 90%;
+	
+
+
 }
 .boxQuer{
-	width: 42%;
+	width: 95%;
+	
 }
 .BoxQuadrat{
+	width: 90%;
+	
+}
+.boxHochPh{
+	width: 20.5%;
+}
+.boxQuer{ph
+	width: 42%;
+}
+.BoxQuadratPh{
 	width: 28%;
 }
+
 .anker{
 	height:96px;
 }
@@ -746,15 +936,66 @@ background-color: #282828;
 }		
 
 /*Main*/
-.boxHoch{
-	width: 14.5%;
+.boxHGr{
+	margin-left:38%;
+	margin-right:auto;
+
 }
-.boxQuer{
+	.boxHOut{
+	height:370px;
+
+}
+.boxQOut{
+	height:370px;
+
+}
+.boxHochPh{
+	width: 23%;
+}
+.boxQuerPh{
+	width: 42%;
+}
+.BoxQuadratPh{
 	width: 28%;
 }
-.BoxQuadrat{
-	width: 19%;
+/* ------------------------------------------------------------ */
+@media screen and (min-width:  1280px){
+
+	 */
+
+/*Main*/
+	.boxHOut{
+	height:450px;
+
 }
+.boxQOut{
+	height:450px;
+
+}
+.boxHochPh{
+	width: 23%;
+}
+.boxQuerPh{
+	width: 28%;
+}
+.BoxQuadratPh{
+	width: 25%;
+}
+/* ----------------------------------------------------------------------- */
+@media screen and (min-width:  1590px){
+
+	 */
+
+/*Main*/
+	.boxHOut{
+	height:550px;
+
+}
+.boxQOut{
+	height:550px;
+
+}
+
 }
 
 

@@ -14,6 +14,7 @@ nicht kopiert und auch nicht diktiert
 body {
     background-color: white;	
     font-size: 1em;
+    padding-right:0.5px;
 }
 
 
@@ -58,18 +59,20 @@ a:visited{color:#841FFF;}
 a{text-decoration: none;}
 aside{
 	color: #black;
-	width: 100%;
+
 	font-family:'Poppins', serif;
 	margin-bottom:10px;
 	text-align: left;
-	background-color: #DCD1FF;
+	background-color: #FFBFD2;
 	position: relative;
 	padding-left:20px;
+
 	line-height: 30px;
 }
 aside>div{
 	padding-top: 5px;
 }
+
 header {
 	color: #black;
 	width: 100%;
@@ -77,7 +80,7 @@ header {
 	font-size: 25px;
 	line-height: 30px;
 	text-align: left;
-	background-color: #DCD1FF;
+	background-color: #FFB3CA;
 	padding-top:0%;
 	padding-left:0%;
 	margin-bottom:10px;
@@ -87,7 +90,7 @@ header {
 }
 /*header*/
 header div{
-	background-color: #DCD1FF;
+	background-color: #FFB3CA;
 }
 header>div>div>div {
 	
@@ -100,18 +103,20 @@ header>div>div>div {
 }
 #menueGr{
 	display:none;
+	
 }
 
 /* header navigation horizontal anordnen */
 	header li {
 		list-style-type: none;
+		
 	}
 
 header form{
 	display: none;
 }
 
-  h1 {color:#3F99FF ;
+  h1 {color:#9F0058 ;
 	font-size:larger;
    font-family: 'Handlee', cursive;
     float: center;
@@ -171,7 +176,7 @@ main > div :hover{
 footer{
 	font-family: 'Poppins', serif;	
 	clear:left;
-	background-color:#CECECE;
+	background-color:#FFD6E3;
 	padding: 1%;
 	
 }
@@ -274,7 +279,7 @@ main > div {
 footer div {
 		width: 32%;
 		float:left;
-		background-color:#CECECE; 
+		background-color:#FFD6E3; 
 	}
 footer {
 		overflow: hidden;

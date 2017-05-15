@@ -64,8 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById("abkuerzelKl").style.display = "block";
     }
 
-    
-    //Projekte 1. Semester
 
     //    Pop-Up-Fenster fuerstenbe      
     var a = true;
@@ -199,48 +197,15 @@ document.addEventListener('DOMContentLoaded', function() {
         e = true;
     });
 
-   // Projekte 2. Semester
-    
-    //    Pop-Up-Fenster CG   
-               
-    var f = true;
-
-    document.getElementById("popUpCG").style.display = "none";
-
-    document.getElementById("compGrafik").addEventListener("click", function() {
-
-        if (f == false) {
-            document.getElementById("popUpCG").style.display = "none";
-            document.getElementById("cgbox").style.backgroundColor = "#363636";
-            f = true;
-        }
-        else {
-            document.getElementById("popUpCG").style.display = "block";
-            document.getElementById("cgbox").style.backgroundColor = "#282828";
-            f = false;
-
-        }
-    });
-    //    popupFenster schließen 
-    document.getElementById("cl6").addEventListener("click", function() {
-        document.getElementById("popUpCG").style.display = "none";
-        document.getElementById("cgbox").style.backgroundColor = "#363636";
-        f = true;
-    });
-    
-
-// Fkt zum Bild links possitionieren ab best. Bildschirmgröße
-     function bildRechtsPositionieren(): void{
-         let screenWidth: number = screen.width; 
-         for(let i: number; i = 0;){
-             
-         }
-     }
+   
 
 
-            
-            
-           
+
+
+
+
+
+
 //
 //
 //
