@@ -7,15 +7,48 @@ Code selbst geschrieben habe. Er wurde
 nicht kopiert und auch nicht diktiert.  */
 
 //warten bis dom content geladen ist
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", init);
+//Globale Variablen
+let klapp: boolean = true;
+let aIDs: string[] = new Array("home", "portfoliokl", "aboutkl", "contactkl", "abkuerzelHome");
 
 
-    var klapp = true;
 
+
+
+function init(): void {
+    //Burger - Menue
     document.getElementById("klappmenue").style.display = "none";
+    document.getElementById("burger").addEventListener("click", burgerMenue);
+    for (var i: number = 0; i < aIDs.length; i++) {
+        document.getElementById(aIDs[i]).addEventListener("click", closeBurger);
+    }
+
+    document.getElementById("abkuerzelKlB").style.display = "none";
+    document.getElementById("abkuerzelKl").style.display = "block";
+    document.getElementById("abkuerzelKl").addEventListener("mouseover", mouseOver);
+    document.getElementById("abkuerzelKlB").addEventListener("mouseout", mouseOut);
+
+    document.getElementById("fuerstenb").addEventListener("click", bild1);
+    document.getElementById("cl1").addEventListener("click", bild1c);
+    document.getElementById("hochschBall").addEventListener("click", bild2);
+    document.getElementById("cl2").addEventListener("click", bild2c);
+    document.getElementById("awarenesCam").addEventListener("click", bild3);
+    document.getElementById("cl3").addEventListener("click", bild3c);
+    document.getElementById("typogr").addEventListener("click", bild4);
+    document.getElementById("cl4").addEventListener("click", bild4c);
+    document.getElementById("shop").addEventListener("click", bild5);
+    document.getElementById("cl5").addEventListener("click", bild5c);
+    document.getElementById("compGrafik").addEventListener("click", bild6);
+    document.getElementById("cl6").addEventListener("click", bild6c);
+    document.getElementById("userEx").addEventListener("click", bild7);
+    document.getElementById("cl7").addEventListener("click", bild7c);
+}
+
 
     /* BurgerMenu */
-    document.getElementById("burger").addEventListener("click", function() {
+
+    function burgerMenue(): void {
 
         if (klapp == false) {
             document.getElementById("klappmenue").style.display = "none";
@@ -27,54 +60,38 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById("navfeld").style.backgroundColor = "rgba(0, 0, 0, 0.9)";
             //   document.getElementById("navfeld").style.backgroundColor="rgba(0, 0, 0, 0.7)";
             klapp = false;
-
         }
-
-    });
-
+    }
 
     //klappmenü schließen, wenn einer der Links angecklickt werden
 
-
- 
-    var aIDs = new Array("home", "portfoliokl", "aboutkl", "contactkl", "abkuerzelHome");
-    for (var i = 0; i < aIDs.length; i++) {
-        document.getElementById(aIDs[i]).addEventListener("click", function() {
-            document.getElementById("klappmenue").style.display = "none";
-            document.getElementById("navfeld").style.backgroundColor = "rgba(0, 0, 0, 0.17)";
-        });
+    function closeBurger(): void {
+        document.getElementById("klappmenue").style.display = "none";
+        document.getElementById("navfeld").style.backgroundColor = "rgba(0, 0, 0, 0.17)";
     }
 
     //abkürzel blau bei hover (klappmenu)
- 
-    document.getElementById("abkuerzelKlB").style.display = "none";
-    document.getElementById("abkuerzelKl").style.display = "block";
 
-    document.getElementById('abkuerzelKl').addEventListener('mouseover', mouseOver);
 
-    function mouseOver() {
+
+    function mouseOver(): void {
         document.getElementById("abkuerzelKlB").style.display = "block";
         document.getElementById("abkuerzelKl").style.display = "none";
     }
 
-    document.getElementById('abkuerzelKlB').addEventListener('mouseout', mouseOut);
-
-    function mouseOut() {
+    function mouseOut(): void {
         document.getElementById("abkuerzelKlB").style.display = "none";
         document.getElementById("abkuerzelKl").style.display = "block";
     }
 
-    
+    //_____________________________________
     //Projekte 1. Semester
 
     //    Pop-Up-Fenster fuerstenbe      
-    var a = true;
+    var a: boolean = true;
 
-
-    document.getElementById("popUpFuerst").style.display = "none";
-
-    document.getElementById("fuerstenb").addEventListener("click", function() {
-
+    function bild1(): void {
+        document.getElementById("popUpFuerst").style.display = "none";
         if (a == false) {
             document.getElementById("popUpFuerst").style.display = "none";
             document.getElementById("fuerstbox").style.backgroundColor = "#363636";
@@ -83,26 +100,25 @@ document.addEventListener('DOMContentLoaded', function() {
         else {
             document.getElementById("popUpFuerst").style.display = "block";
             document.getElementById("fuerstbox").style.backgroundColor = "#282828";
-            a = false
+            a = false;
         }
-    });
+    }
     //    popupFenster schließen
-    document.getElementById("cl1").addEventListener("click", function() {
+
+    function bild1c(): void {
         document.getElementById("popUpFuerst").style.display = "none";
         document.getElementById("fuerstbox").style.backgroundColor = "#363636";
         a = true;
 
-    });
+    }
 
 
 
     //    Pop-Up-Fenster Hochschulball             
-    var b = true;
+    var b: boolean = true;
 
-    document.getElementById("popUpBall").style.display = "none";
-
-    document.getElementById("hochschBall").addEventListener("click", function() {
-
+    function bild2(): void {
+        document.getElementById("popUpBall").style.display = "none";
         if (b == false) {
             document.getElementById("popUpBall").style.display = "none";
             document.getElementById("ballbox").style.backgroundColor = "#363636";
@@ -114,21 +130,22 @@ document.addEventListener('DOMContentLoaded', function() {
             b = false;
 
         }
-    });
+    }
     //    popupFenster schließen   
-    document.getElementById("cl2").addEventListener("click", function() {
+
+    function bild2c(): void {
         document.getElementById("popUpBall").style.display = "none";
         document.getElementById("ballbox").style.backgroundColor = "#363636";
         b = true;
-    });
+    }
 
     //    Pop-Up-Fenster awareness Campange                 
-    var c = true;
+    var c: boolean = true;
 
-    document.getElementById("popUpAware").style.display = "none";
 
-    document.getElementById("awarenesCam").addEventListener("click", function() {
 
+    function bild3(): void {
+        document.getElementById("popUpAware").style.display = "none";
         if (c == false) {
             document.getElementById("popUpAware").style.display = "none";
             document.getElementById("awarebox").style.backgroundColor = "#363636";
@@ -140,20 +157,19 @@ document.addEventListener('DOMContentLoaded', function() {
             c = false;
 
         }
-    });
+    }
     //    popupFenster schließen  
-    document.getElementById("cl3").addEventListener("click", function() {
+
+    function bild3c(): void {
         document.getElementById("popUpAware").style.display = "none";
         document.getElementById("awarebox").style.backgroundColor = "#363636";
         c = true;
-    });
+    }
     //    Pop-Up-Fenster typografie            
-    var d = true;
+    var d: boolean = true;
 
-    document.getElementById("popUpTypo").style.display = "none";
-
-    document.getElementById("typogr").addEventListener("click", function() {
-
+    function bild4(): void {
+        document.getElementById("popUpTypo").style.display = "none";
         if (d == false) {
             document.getElementById("popUpTypo").style.display = "none";
             document.getElementById("typoBox").style.backgroundColor = "#363636";
@@ -165,21 +181,20 @@ document.addEventListener('DOMContentLoaded', function() {
             d = false;
 
         }
-    });
+    }
     //    popupFenster schließen 
-    document.getElementById("cl4").addEventListener("click", function() {
+
+    function bild4c(): void {
         document.getElementById("popUpTypo").style.display = "none";
         document.getElementById("typoBox").style.backgroundColor = "#363636";
         d = true;
-    });
+    }
 
-//    Pop-Up-Fenster Shop                
-    var e = true;
+    //    Pop-Up-Fenster Shop                
+    var e: boolean = true;
 
-    document.getElementById("popUpShop").style.display = "none";
-
-    document.getElementById("shop").addEventListener("click", function() {
-
+    function bild5(): void {
+        document.getElementById("popUpShop").style.display = "none";
         if (e == false) {
             document.getElementById("popUpShop").style.display = "none";
             document.getElementById("shopbox").style.backgroundColor = "#363636";
@@ -191,24 +206,24 @@ document.addEventListener('DOMContentLoaded', function() {
             e = false;
 
         }
-    });
+    }
     //    popupFenster schließen  
-    document.getElementById("cl5").addEventListener("click", function() {
+
+    function bild5c(): void {
         document.getElementById("popUpShop").style.display = "none";
         document.getElementById("shopbox").style.backgroundColor = "#363636";
         e = true;
-    });
+    }
+    //_____________________________________
+    // Projekte 2. Semester
+    //    Pop-Up-Fenster CG   
+    var f: boolean = true;
 
-   // Projekte 2. Semester
-    
-    //    Pop-Up-Fenster CG   
-               
-    var f = true;
 
-    document.getElementById("popUpCG").style.display = "none";
 
-    document.getElementById("compGrafik").addEventListener("click", function() {
 
+    function bild6(): void {
+        document.getElementById("popUpCG").style.display = "none";
         if (f == false) {
             document.getElementById("popUpCG").style.display = "none";
             document.getElementById("cgbox").style.backgroundColor = "#363636";
@@ -220,202 +235,75 @@ document.addEventListener('DOMContentLoaded', function() {
             f = false;
 
         }
-    });
+    }
     //    popupFenster schließen 
-    document.getElementById("cl6").addEventListener("click", function() {
+
+    function bild6c(): void {
         document.getElementById("popUpCG").style.display = "none";
         document.getElementById("cgbox").style.backgroundColor = "#363636";
         f = true;
-    });
-    
+    }
 
-// Fkt zum Bild links possitionieren ab best. Bildschirmgröße
-     function bildRechtsPositionieren(): void{
-         let screenWidth: number = screen.width; 
-         for(let i: number; i = 0;){
-             
-         }
-     }
+    //    Pop-Up-Fenster UX   
+
+    var g: boolean = true;
 
 
-            
-            
-           
-//
-//
-//
-//    var slideIndex = 1;
-//    //aufruf fkt showslides
-//    showSlides(slideIndex);
-////1. ausgeführt
-//    function plusSlides(n) {
-//        showSlides(slideIndex += n);
-//    }
-////2. ausgeführt
-//    function currentSlide(n) {
-//        showSlides(slideIndex = n);
-//    }
-//
-//    function showSlides(n) {
-//        var i;
-//        var slides = document.getElementsByClassName("mySlides");
-//        var dots = document.getElementsByClassName("dot1");
-//        if (n > slides.length) { slideIndex = 1 }
-//        if (n < 1) { slideIndex = slides.length }
-//        for (i = 0; i < slides.length; i++) {
-//            slides[i].style.display = "none";
-//        }
-//        for (i = 0; i < dots.length; i++) {
-//            dots[i].className = dots[i].className.replace(" active", "");
-//        }
-//        slides[slideIndex - 1].style.display = "block";
-//        dots[slideIndex - 1].className += " active";
-//    }
-//
-//
-//    // Slideshow hochsch.ball
-//             slideIndex = 1;
-//    // showSlides(slideIndex);
-//    //          
-//    // function plusSlides(n) {
-//    // showSlides(slideIndex += n);
-//    // }
-//    //          
-//    // function currentSlide(n) {
-//    // showSlides(slideIndex = n);
-//    // }
-//    function showSlides(n) {
-//        var i;
-//        var slides = document.getElementsByClassName("mySlides1");
-//        var dots = document.getElementsByClassName("dot2");
-//        if (n > slides.length) { slideIndex = 1 }
-//        if (n < 1) { slideIndex = slides.length }
-//        for (i = 0; i < slides.length; i++) {
-//            slides[i].style.display = "none";
-//        }
-//        for (i = 0; i < dots.length; i++) {
-//            dots[i].className = dots[i].className.replace(" active", "");
-//        }
-//        slides[slideIndex - 1].style.display = "block";
-//        dots[slideIndex - 1].className += " active";
-//    }
-//    // Slideshow awareness camp.
-//          nction showSlides(n) {
-//        var i;
-//        var slides = document.getElementsByClassName("mySlides2");
-//        var dots = document.getElementsByClassName("dot");
-//        if (n > slides.length) { slideIndex = 1 }
-//        if (n < 1) { slideIndex = slides.length }
-//        for (i = 0; i < slides.length; i++) {
-//            slides[i].style.display = "none";
-//        }
-//        for (i = 0; i < dots.length; i++) {
-//            dots[i].className = dots[i].className.replace(" active", "");
-//        }
-//        slides[slideIndex - 1].style.display = "block";
-//        dots[slideIndex - 1].className += " active";
-//    } 
-//         
-//            
-//         
-     
-    
-    
-    
-//  var slideIndex: number = 1;
-//            showSlides(slideIndex);
-////            plusSlides();
-////            currentSlide();
-//    
-//    
-//            function plusSlides(n) {
-//              showSlides(slideIndex += n);
-//            }
-//            
-//            function currentSlide(n) {
-//              showSlides(slideIndex = n);
-//            }
-//            
-//            function showSlides(n) {
-//             
-//              let slides: NodeListOf<Element> = document.getElementsByClassName("mySlides");
-//              let dots: NodeListOf<Element> = document.getElementsByClassName("dot1");
-//              if (n > slides.length) {slideIndex = 1}    
-//              if (n < 1) {slideIndex = slides.length}
-//              for (let i :number = 0; i < slides.length; i++) {
-//                  slides[i].style.display = "none";  
-//              }
-//              for (let i :number = 0; i < dots.length; i++) {
-//                  dots[i].className = dots[i].className.replace(" active", "");
-//              }
-//              slides[slideIndex-1].style.display = "block";  
-//              dots[slideIndex-1].className += " active";
-//            }  
-    
-    
-    
-    
-    
-    
-    
-// Slideshow fürstenb.
-//    
-//            let slideIndex: number = 1;
-//            showSlides(slideIndex);
-//            let n;
-//            function plusSlides(n):void {
-//              showSlides(slideIndex += n);
-//             console.log("plusSlides",n);
-//            }
-//            document.addEventListener("click", nSlide ) ;
-//            function nSlide(n):void {
-//              showSlides(slideIndex = n);
-//             console.log("nSlide", n);
-//            }
-//            
-//            function showSlides(n):void {
-//                console.log("showSlides", n);
-//              let i:number;
-//              let anzahl: NodeListOf<Element> = document.getElementsByClassName("anzahl");
-//              let dots: NodeListOf<Element> = document.getElementsByClassName("dot1");
-//              if (n > anzahl.length) {slideIndex = 1}    
-//              if (n < 1) {slideIndex = anzahl.length}
-//                if(n==1 || n == 3){
-// //               var farbe= document.getElementsByClassName("farbe");
-// //                farbe[1].style.style.backgroundColor ="#01c6ff";
-//                  document.getElementById("farbe")].style.style.backgroundColor ="#01c6ff";
-//                }
-//              for (i = 0; i < anzahl.length; i++) {
-//                 anzahl[i].style.display = "none"; 
-//                 
-//              }
-//             anzahl[slideIndex-1].style.display = "block";  
-//              dots[slideIndex-1].className += "active";
-//             
-//            } 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
- 
-});    
+
+
+    function bild7(): void {
+        document.getElementById("popUpUx").style.display = "none";
+        if (g == false) {
+            document.getElementById("popUpUx").style.display = "none";
+            document.getElementById("uxbox").style.backgroundColor = "#363636";
+            g = true;
+        }
+        else {
+            document.getElementById("popUpUx").style.display = "block";
+            document.getElementById("uxbox").style.backgroundColor = "#282828";
+            g = false;
+
+        }
+    }
+    //    popupFenster schließen 
+
+    function bild7c(): void {
+        document.getElementById("popUpUx").style.display = "none";
+        document.getElementById("uxbox").style.backgroundColor = "#363636";
+        g = true;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //        document.getElementById("burger").addEventListener("mouseover", burgerBlau);
+    //        document.getElementById("burger").addEventListener("click", burgerBlau);
+    //        function burgerBlau(): void{
+    //            if (klapp== true){
+    //                document.getElementsByClassName("burgerIcon").classList.toggle("farbe");
+    //                }
+    ////            document.getElementsByClassName("burgerIcon").style.backgroundColor =282828";
+    //        }
+
+   
+
+

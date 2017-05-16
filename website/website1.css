@@ -51,6 +51,16 @@ header {
     margin-left: 25px%;
 	margin-bottom:10px;
 }
+/* .burgerIcon: hover {	 */
+/*      width: 35px; */
+/*     height: 5px; */
+/*     background-color: rgba(1, 198, 255, 0.9); */
+/*     margin: 6px; */
+/*     margin-left: 25px%; */
+/* 	margin-bottom:10px; */
+   
+    
+/* } */
 #menueGr{
 	display:none;
 }	
@@ -732,7 +742,7 @@ float:left;
 	z-index:100;
 }
 
-#links{
+#ente {
 	clear:left;
 }
 .BoxQuadratPh{
@@ -953,10 +963,13 @@ float:left;
 	width: 23%;
 }
 .boxQuerPh{
-	width: 42%;
+	width: 28%;
 }
 .BoxQuadratPh{
-	width: 28%;
+	width: 25%;	
+}
+#ente {
+	clear:none;
 }
 /* ------------------------------------------------------------ */
 @media screen and (min-width:  1280px){
