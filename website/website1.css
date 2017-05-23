@@ -357,7 +357,7 @@ li a img{
 	margin-left:auto;
 	margin-right:auto;
 	width:70%;
-
+	margin-top:20px;
 	margin-bottom:10px;
 	font-family: Candara, 'Hind Siliguri', sans-serif;
 	font-size:75%;
@@ -682,7 +682,7 @@ float:left;
 }
 .boxQOut{
 	height:230px;
-float:left;
+	float:left;
 	width: 40%;
 }
 
